@@ -3,7 +3,7 @@
 fn() {
 	mkdir .tmp
 	magick -density 300 "${FILE}" .tmp/tmp.png
-	magick .tmp/tmp-*.png "${FILE}"_new.pdf
+	magick .tmp/tmp-*.png new_"${FILE}"
 	rm -rf .tmp
 }
 
